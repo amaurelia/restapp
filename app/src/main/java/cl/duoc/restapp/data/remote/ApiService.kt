@@ -1,9 +1,9 @@
 package cl.duoc.restapp.data.remote
 
-import cl.duoc.restapp.data.model.Post
+import cl.duoc.restapp.data.model.Usuario
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("posts")
-    suspend fun getPosts(): List<Post>
+    @GET("api.php?endpoint=obtenerUsuarios")
+    suspend fun getUsuarios(): List<Usuario>
 }
